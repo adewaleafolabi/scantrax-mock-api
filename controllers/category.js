@@ -24,7 +24,7 @@ const categories = [
     "dateCreated": 1507148447000
   },
   {
-    "image": "http://res.cloudinary.com/debrasgr/image/upload/v1507148495/Clothes.jpg.png",
+    "image": "http://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAA3ZAAAAJGMwOGJjYmQ0LTgyZjYtNGE0Mi04Nzg3LTIxMTI2N2FmYzEwZA.jpg",
     "id": 10,
     "catName": "Clothes",
     "description": "Categories for all clothes",

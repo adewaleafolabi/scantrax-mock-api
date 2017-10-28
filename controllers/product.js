@@ -1,6 +1,7 @@
 // ./controllers/product
 const paginate = require("paginate-array");
 const _ = require('lodash');
+const sleep = require('sleep');
 const products = [
   {
     "prdcode": "0F338696",
@@ -9576,6 +9577,8 @@ function getPaginatedItems(items, page, per_page) {
 	};
 }
 
+
+
 const productController = {
   all(req, res) {
     // Returns all products
@@ -9596,9 +9599,8 @@ const productController = {
     const paginated = paginate(sorted,page,limit);
 
     const response = {total: paginated.total, list: paginated.data, page: paginated.currentPage, limit: paginated.perPage, pages: paginated.totaPages}
-    //res.json(response)
+    sleep.sleep(1);
     res.json(response);
-    
   }
 };
 
